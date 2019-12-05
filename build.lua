@@ -4,8 +4,7 @@
 module = "pmboxdraw"
 
 installfiles = {
-'*.sty',
-'pmboxdraw-showcases.tex',
+'*.sty','*.dfu',
 '*.dtx','*.pdf'
 }
 
