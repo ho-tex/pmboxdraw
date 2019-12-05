@@ -1,13 +1,13 @@
 % \iffalse meta-comment
 %
 % File: pmboxdraw.dtx
-% Version: 2019/02/28 v1.3
+% Version: 2019/12/15 v1.4
 % Info: Poor man's box drawing characters
 %
 % Copyright (C)
 %    2006, 2011 Heiko Oberdiek
 %    2016-2019 Oberdiek Package Support Group
-%    https://github.com/ho-tex/oberdiek/issues
+%    https://github.com/ho-tex/pmboxdraw/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -23,7 +23,7 @@
 %
 % The Current Maintainers of this work are
 % Heiko Oberdiek and the Oberdiek Package Support Group
-% https://github.com/ho-tex/oberdiek/issues
+% https://github.com/ho-tex/pmboxdraw/issues
 %
 % This work consists of the main source file pmboxdraw.dtx
 % and the derived files
@@ -31,8 +31,8 @@
 %    pmboxdrawenc.dfu, pmboxdraw-test1.tex.
 %
 % Distribution:
-%    CTAN:macros/latex/contrib/oberdiek/pmboxdraw.dtx
-%    CTAN:macros/latex/contrib/oberdiek/pmboxdraw.pdf
+%    CTAN:macros/latex/contrib/pmboxdraw/pmboxdraw.dtx
+%    CTAN:macros/latex/contrib/pmboxdraw/pmboxdraw.pdf
 %
 % Unpacking:
 %    (a) If pmboxdraw.ins is present:
@@ -61,10 +61,10 @@
 %       pdflatex pmboxdraw.dtx
 %
 % Installation:
-%    TDS:tex/latex/oberdiek/pmboxdraw.sty
-%    TDS:tex/latex/oberdiek/pmboxdrawenc.dfu
-%    TDS:doc/latex/oberdiek/pmboxdraw.pdf
-%    TDS:source/latex/oberdiek/pmboxdraw.dtx
+%    TDS:tex/latex/pmboxdraw/pmboxdraw.sty
+%    TDS:tex/latex/pmboxdraw/pmboxdrawenc.dfu
+%    TDS:doc/latex/pmboxdraw/pmboxdraw.pdf
+%    TDS:source/latex/pmboxdraw/pmboxdraw.dtx
 %
 %<*ignore>
 \begingroup
@@ -81,7 +81,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: pmboxdraw 2019/02/28 v1.3 Poor man's box drawing characters (HO)}
+\Msg{* Package: pmboxdraw 2019/12/15 v1.4 Poor man's box drawing characters (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -93,7 +93,7 @@
 This is a generated file.
 
 Project: pmboxdraw
-Version: 2019/02/28 v1.3
+Version: 2019/12/15 v1.4
 
 Copyright (C)
    2006, 2011 Heiko Oberdiek
@@ -113,7 +113,7 @@ This work has the LPPL maintenance status "maintained".
 
 The Current Maintainers of this work are
 Heiko Oberdiek and the Oberdiek Package Support Group
-https://github.com/ho-tex/oberdiek/issues
+https://github.com/ho-tex/pmboxdraw/issues
 
 
 This work consists of the main source file pmboxdraw.dtx
@@ -127,11 +127,9 @@ and the derived files
 \generate{%
   \file{pmboxdraw.ins}{\from{pmboxdraw.dtx}{install}}%
   \file{pmboxdraw.drv}{\from{pmboxdraw.dtx}{driver}}%
-  \usedir{tex/latex/oberdiek}%
+  \usedir{tex/latex/pmboxdraw}%
   \file{pmboxdraw.sty}{\from{pmboxdraw.dtx}{package}}%
   \file{pmboxdrawenc.dfu}{\from{pmboxdraw.dtx}{utf8}}%
-%  \usedir{doc/latex/oberdiek/test}%
-%  \file{pmboxdraw-test1.tex}{\from{pmboxdraw.dtx}{test1}}%
 }
 
 \catcode32=13\relax% active space
@@ -158,7 +156,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{pmboxdraw.drv}%
-  [2019/02/28 v1.3 Poor man's box drawing characters (HO)]%
+  [2019/12/15 v1.4 Poor man's box drawing characters (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \usepackage{color}
@@ -180,9 +178,9 @@ and the derived files
 % \GetFileInfo{pmboxdraw.drv}
 %
 % \title{The \xpackage{pmboxdraw} package}
-% \date{2019/02/28 v1.3}
+% \date{2019/12/15 v1.4}
 % \author{Heiko Oberdiek\thanks
-% {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
+% {Please report any issues at \url{https://github.com/ho-tex/pmboxdraw/issues}}}
 %
 % \maketitle
 %
@@ -211,7 +209,7 @@ and the derived files
 % \textSFxxxix===================\textSFxxv\\
 % | P M B O X D R A W |\\
 % \textSFxxxviii ==\textSFxlvii============\textSFxlvii===\textSFxxvi\\
-% ~~~\textSFxi~2019/02/28 \textSFxi\\
+% ~~~\textSFxi~2019/12/15 \textSFxi\\
 % ~~~\textSFii------------\textSFiv
 % \end{quote}
 %
@@ -547,7 +545,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@pmboxdraw.sty\endcsname
 \ProvidesPackage{pmboxdraw}%
-  [2019/02/28 v1.3 Poor man's box drawing characters (HO)]%
+  [2019/12/15 v1.4 Poor man's box drawing characters (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -5103,7 +5101,7 @@ $ \kern.5\pmbd@C
 %    \begin{macrocode}
 %<*utf8>
 \ProvidesFile{pmboxdrawenc.dfu}%
-  [2019/02/28 v1.3 UTF-8 support for box drawing characters]%
+  [2019/12/15 v1.4 UTF-8 support for box drawing characters]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -5253,17 +5251,17 @@ $ \kern.5\pmbd@C
 % \paragraph{Package.} This package is available on
 % CTAN\footnote{\CTANpkg{pmboxdraw}}:
 % \begin{description}
-% \item[\CTAN{macros/latex/contrib/oberdiek/pmboxdraw.dtx}] The source file.
-% \item[\CTAN{macros/latex/contrib/oberdiek/pmboxdraw.pdf}] Documentation.
+% \item[\CTAN{macros/latex/contrib/pmboxdraw/pmboxdraw.dtx}] The source file.
+% \item[\CTAN{macros/latex/contrib/pmboxdraw/pmboxdraw.pdf}] Documentation.
 % \end{description}
 %
 %
-% \paragraph{Bundle.} All the packages of the bundle `oberdiek'
+% \paragraph{Bundle.} All the packages of the bundle `pmboxdraw'
 % are also available in a TDS compliant ZIP archive. There
 % the packages are already unpacked and the documentation files
 % are generated. The files and directories obey the TDS standard.
 % \begin{description}
-% \item[\CTANinstall{install/macros/latex/contrib/oberdiek.tds.zip}]
+% \item[\CTANinstall{install/macros/latex/contrib/pmboxdraw.tds.zip}]
 % \end{description}
 % \emph{TDS} refers to the standard ``A Directory Structure
 % for \TeX\ Files'' (\CTANpkg{tds}). Directories
@@ -5271,11 +5269,11 @@ $ \kern.5\pmbd@C
 %
 % \subsection{Bundle installation}
 %
-% \paragraph{Unpacking.} Unpack the \xfile{oberdiek.tds.zip} in the
+% \paragraph{Unpacking.} Unpack the \xfile{pmboxdraw.tds.zip} in the
 % TDS tree (also known as \xfile{texmf} tree) of your choice.
 % Example (linux):
 % \begin{quote}
-%   |unzip oberdiek.tds.zip -d ~/texmf|
+%   |unzip pmboxdraw.tds.zip -d ~/texmf|
 % \end{quote}
 %
 % \subsection{Package installation}
@@ -5293,10 +5291,10 @@ $ \kern.5\pmbd@C
 % \begin{quote}
 % \def\t{^^A
 % \begin{tabular}{@{}>{\ttfamily}l@{ $\rightarrow$ }>{\ttfamily}l@{}}
-%   pmboxdraw.sty & tex/latex/oberdiek/pmboxdraw.sty\\
-%   pmboxdrawenc.dfu & tex/latex/oberdiek/pmboxdrawenc.dfu\\
-%   pmboxdraw.pdf & doc/latex/oberdiek/pmboxdraw.pdf\\
-%   pmboxdraw.dtx & source/latex/oberdiek/pmboxdraw.dtx\\
+%   pmboxdraw.sty & tex/latex/pmboxdraw/pmboxdraw.sty\\
+%   pmboxdrawenc.dfu & tex/latex/pmboxdraw/pmboxdrawenc.dfu\\
+%   pmboxdraw.pdf & doc/latex/pmboxdraw/pmboxdraw.pdf\\
+%   pmboxdraw.dtx & source/latex/pmboxdraw/pmboxdraw.dtx\\
 % \end{tabular}^^A
 % }^^A
 % \sbox0{\t}^^A
@@ -5422,13 +5420,13 @@ $ \kern.5\pmbd@C
 %   Unicode Inc.,
 %   The Unicode Standard, Version 4.1, Box Drawing, Range: 2500--257F,
 %   2005.
-%   \url{http://www.unicode.org/charts/PDF/U2500.pdf}
+%   \url{https://www.unicode.org/charts/PDF/U2500.pdf}
 %
 % \bibitem{2580}
 %   Unicode Inc.,
 %   The Unicode Standard, Version 4.1, Block Elements, Range: 2580--259F,
 %   2005.
-%   \url{http://www.unicode.org/charts/PDF/U2580.pdf}
+%   \url{https://www.unicode.org/charts/PDF/U2580.pdf}
 %
 % \end{thebibliography}
 %
@@ -5450,6 +5448,10 @@ $ \kern.5\pmbd@C
 %   \begin{Version}{2019/02/28 v1.3}
 %   \item
 %     Fix character U+257F (gh issue 59)
+%   \end{Version}
+%   \begin{Version}{2019/12/15 v1.4}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %
